@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 
 class HexwoodCloudSeeder extends Seeder
 {
+
     public function run(): void
     {
         // =========================

@@ -17,6 +17,6 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        $this->call(HexwoodCloudSeeder::class);
+        $this->call(HexwoodCloudSeeder2::class);
     }
 }
