@@ -2,7 +2,7 @@
     @include("components.hader", ['categories' => $categories, 'countCategories' => $countCategories])
   <!--====== BANNER PART START ======-->
   @include("components.main-page-slider")
-  <section class="about-section pt-115 pb-115" style="margin-top: 89px;">
+  <section class="about-section pt-115 m-pt-0 pb-115" style="margin-top: 89px;">
     <div class="container">
       <div class="row align-items-center justify-content-center">
         <div class="col-lg-6 col-md-10 wow fadeInLeft" data-wow-delay=".3s">
@@ -75,23 +75,23 @@
         role="tablist">
         <li class="nav-item col-lg-2 col-md-3 col-sm-4 col-6">
           <a class="nav-link active" data-toggle="pill" href="#lamps">
-            <i class="flaticon-Маса">
-                <img src="{{asset('assets/img/icons/lamps.jpg')}}" style="height: 120px">
+            <i class="no-mobile flaticon-Маса">
+                <img class="no-mobile" src="{{asset('assets/img/icons/lamps.jpg')}}" style="height: 120px">
             </i>
             <span class="title">Лампи</span>
           </a>
         </li>
         <li class="nav-item col-lg-2 col-md-3 col-sm-4 col-6">
           <a class="nav-link " data-toggle="pill" href="#shelfs">
-              <img src="{{asset('assets/img/icons/etajerki.jpg')}}"  style="height: 120px">
-            <i class="flaticon-Рафтове"></i>
+              <img class="no-mobile" src="{{asset('assets/img/icons/etajerki.jpg')}}"  style="height: 120px">
+            <i class="flaticon-Рафтове no-mobile"></i>
             <span class="title"  style=" padding-top: 21px;">Етажерки</span>
           </a>
         </li>
         <li class="nav-item col-lg-2 col-md-3 col-sm-4 col-6">
           <a class="nav-link" data-toggle="pill" href="#small-furniture">
-              <img src="{{asset('assets/img/icons/malki mebeli.jpg')}}"  style="height: 120px">
-            <i class="flaticon-Шкафове"></i>
+              <img class="no-mobile" src="{{asset('assets/img/icons/malki mebeli.jpg')}}"  style="height: 120px">
+            <i class="no-mobile flaticon-Шкафове"></i>
             <span class="title"  style=" padding-top: 0px;">Малки мебели</span>
           </a>
         </li>
@@ -99,22 +99,22 @@
           <a class="nav-link" data-toggle="pill" href="#pets-furniture" style="
     padding-bottom: 16px;
 ">
-              <img src="{{asset('assets/img/icons/domashni.jpg')}}"  style="height: 120px">
-            <i class="flaticon-Bracelets-2"></i>
+              <img class="no-mobile" src="{{asset('assets/img/icons/domashni.jpg')}}"  style="height: 120px">
+            <i class="no-mobile flaticon-Bracelets-2"></i>
             <span class="title"  style=" padding-top: 0px;">Домашни любимци</span>
           </a>
         </li>
         <li class="nav-item col-lg-2 col-md-3 col-sm-4 col-6">
           <a class="nav-link" data-toggle="pill" href="#coffee-tables">
-              <img src="{{asset('assets/img/icons/holni masi.jpg')}}" style="height: 120px">
-            <i class="flaticon-Armlets"></i>
+              <img class="no-mobile" src="{{asset('assets/img/icons/holni masi.jpg')}}" style="height: 120px">
+            <i class="no-mobile flaticon-Armlets"></i>
             <span class="title" style=" padding-top: 0px;">Холни маси</span>
           </a>
         </li>
         <li class="nav-item col-lg-2 col-md-3 col-sm-4 col-6">
-          <a class="nav-link" data-toggle="pill" href="#others">
-              <img src="{{asset('assets/img/icons/others.jpg')}}"  style="height: 120px">
-            <i class="flaticon-Anklets-1"></i>
+          <a class="nav-link"  data-toggle="pill" href="#others">
+              <img class="no-mobile" src="{{asset('assets/img/icons/others.jpg')}}"  style="height: 120px">
+            <i class="flaticon-Anklets-1 no-mobile"></i>
             <span class="title" style=" padding-top: 0px;">Drugi</span>
           </a>
         </li>
@@ -437,244 +437,145 @@
     <i class="fal fa-angle-double-up"></i>
   </a>
   <!--====== FOOTER START ======-->
-  <footer class="footer-two">
-    <div class="footer-widget-area pt-100 pb-50">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-sm-6 order-1">
-            <!-- Site Info Widget -->
-            <div class="widget site-info-widget mb-50">
-              <div class="footer-logo mb-50">
-                <img src="assets/img/footer-logo.png" alt="Logo">
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitat ion ullamco laboris nisi.
-              </p>
-              <div class="social-links mt-40">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-behance"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 order-3 order-lg-2">
-            <!-- Nav Widget -->
-            <div class="widget nav-widget mb-50">
-              <div>
-                <h4 class="widget-title">New Collections.</h4>
-                <ul>
-                  <li><a href="#">Орех Маса</a></li>
-                  <li><a href="#">Дъб Декор</a></li>
-                  <li><a href="#">Big Шкафове </a></li>
-                  <li><a href="#">Ясен Декор</a></li>
-                  <li><a href="#">Дъб Earring</a></li>
-                  <li><a href="#">Stud Рафтове</a></li>
-                  <li><a href="#">Crumpled Маса</a></li>
-                  <li><a href="#">Moon Шкафове</a></li>
-                  <li><a href="#">Ankle Декор</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 order-2 order-lg-3">
-            <!-- Contact Widget -->
-            <div class="widget contact-widget mb-50">
-              <h4 class="widget-title">Contact Us.</h4>
-              <div class="contact-lists">
-                <div class="contact-box">
-                  <div class="icon">
-                    <i class="flaticon-phone"></i>
-                  </div>
-                  <div class="desc">
-                    <h6 class="title">Phone Number</h6>
-                    +987 876 765 76 577
-                  </div>
-                </div>
-                <div class="contact-box">
-                  <div class="icon">
-                    <i class="flaticon-message"></i>
-                  </div>
-                  <div class="desc">
-                    <h6 class="title">Email Address</h6>
-                    <a href="#">info@webmail.com</a>
-                  </div>
-                </div>
-                <div class="contact-box">
-                  <div class="icon">
-                    <i class="flaticon-location-pin"></i>
-                  </div>
-                  <div class="desc">
-                    <h6 class="title">Office Address</h6>
-                    14/A, Miranda City, NYC
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="copyright-area pt-30 pb-30">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-md-5 order-2 order-md-1">
-            <p class="copyright-text copyright-two">Copyright By@<a href="#">Example</a> - 2025</p>
-          </div>
-          <div class="col-lg-6 col-md-7 order-1 order-md-2">
-            <div class="footer-menu text-center text-md-right">
-              <ul>
-                <li><a href="#">Terms of use</a></li>
-                <li><a href="#">Privacy Environmental Policy</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
   <!--====== FOOTER END ======-->
   <!-- Quick View Modal Start -->
-  <div class="modal fade quick-view-modal" id="quickViewModal" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="close-btn" data-dismiss="modal">
-            <a href="#" class="remove"><i class="fal fa-times"></i></a>
-          </div>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-5">
-                <div class="shop-detail-image">
-                  <img src="assets/img/shop/detail-1.png" class="img-fluid" alt="img">
-                </div>
-              </div>
-              <div class="col-lg-7">
-                <div class="shop-detail-content">
-                  <h3 class="product-title mb-20">Handmade Golden Маса</h3>
-                  <span class="rating mb-20">
-                    <span class="text-yellow"><i class="far fa-star"></i></span>
-                    <span class="text-yellow"><i class="far fa-star"></i></span>
-                    <span class="text-yellow"><i class="far fa-star"></i></span>
-                    <span class="text-dark-white"><i class="far fa-star"></i></span>
-                    <span class="text-dark-white"><i class="far fa-star"></i></span>
-                    <span class="pro-review"> <span>1 Reviews</span>
-                    </span>
-                  </span>
-                  <div class="desc mb-20 pb-20 border-bottom">
-                    <span class="price">$390 <span>$480</span></span>
-                  </div>
-                  <div class="mt-20 mb-20">
-                    <div class="d-inline-block other-info">
-                      <h6>Availability:
-                        <span class="text-success ml-2">In Stock</span>
-                      </h6>
-                    </div>
-                    <div class="ml-2 d-inline-block other-info">
-                      <h6>SKU:
-                        <span class="grey ml-2">006-bhg</span>
-                      </h6>
-                    </div>
-                  </div>
-                  <div class="short-descr mb-20">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                      nisi ut aliquip</p>
-                  </div>
-                  <div class="color-sec mb-20">
-                    <label>Color</label>
-                    <div class="color-box">
-                      <label class="m-0">
-                        <input type="radio" name="color">
-                        <span class="choose-color red"></span>
-                      </label>
-                      <label class="m-0">
-                        <input type="radio" name="color">
-                        <span class="choose-color yellow"></span>
-                      </label>
-                      <label class="m-0">
-                        <input type="radio" name="color">
-                        <span class="choose-color blue"></span>
-                      </label>
-                      <label class="m-0">
-                        <input type="radio" name="color">
-                        <span class="choose-color green"></span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="color-sec mb-20">
-                    <label>Material</label>
-                    <div class="color-box">
-                      <label class="m-0">
-                        <input type="radio" name="material">
-                        <span class="choose-material">Дъб</span>
-                      </label>
-                      <label class="m-0">
-                        <input type="radio" name="material">
-                        <span class="choose-material">Орех</span>
-                      </label>
-                      <label class="m-0">
-                        <input type="radio" name="material">
-                        <span class="choose-material">Ясен</span>
-                      </label>
-                      <label class="m-0">
-                        <input type="radio" name="material">
-                        <span class="choose-material">Stone</span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="quantity-cart d-block d-sm-flex">
-                    <div class="quantity-box">
-                      <button type="button" class="minus-btn">
-                        <i class="fal fa-minus"></i>
-                      </button>
-                      <input type="text" class="input-qty" name="name" value="1">
-                      <button type="button" class="plus-btn">
-                        <i class="fal fa-plus"></i>
-                      </button>
-                    </div>
-                    <div class="cart-btn pl-40">
-                      <a href="#" class="main-btn btn-border">Add to Cart</a>
-                    </div>
-                  </div>
-                  <div class="other-info flex mt-20">
-                    <h6>Category:</h6>
-                    <ul>
-                      <li class="list-inline-item mr-2">
-                        <a href="#" class="grey">Bracelets</a>
-                      </li>
-                      <li class="list-inline-item mr-2">
-                        <a href="#" class="grey">Маси</a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#" class="grey">Ясен Декор</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="other-info flex mt-20">
-                    <h6>Tags:</h6>
-                    <ul>
-                      <li class="list-inline-item mr-2">
-                        <a href="#" class="grey">Маси</a>
-                      </li>
-                      <li class="list-inline-item mr-2">
-                        <a href="#" class="grey">necklaces</a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#" class="grey">Декор</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+{{--  <div class="modal fade quick-view-modal" id="quickViewModal" role="dialog" aria-hidden="true">--}}
+{{--    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">--}}
+{{--      <div class="modal-content">--}}
+{{--        <div class="modal-body">--}}
+{{--          <div class="close-btn" data-dismiss="modal">--}}
+{{--            <a href="#" class="remove"><i class="fal fa-times"></i></a>--}}
+{{--          </div>--}}
+{{--          <div class="container-fluid">--}}
+{{--            <div class="row">--}}
+{{--              <div class="col-lg-5">--}}
+{{--                <div class="shop-detail-image">--}}
+{{--                  <img src="assets/img/shop/detail-1.png" class="img-fluid" alt="img">--}}
+{{--                </div>--}}
+{{--              </div>--}}
+{{--              <div class="col-lg-7">--}}
+{{--                <div class="shop-detail-content">--}}
+{{--                  <h3 class="product-title mb-20">Handmade Golden Маса</h3>--}}
+{{--                  <span class="rating mb-20">--}}
+{{--                    <span class="text-yellow"><i class="far fa-star"></i></span>--}}
+{{--                    <span class="text-yellow"><i class="far fa-star"></i></span>--}}
+{{--                    <span class="text-yellow"><i class="far fa-star"></i></span>--}}
+{{--                    <span class="text-dark-white"><i class="far fa-star"></i></span>--}}
+{{--                    <span class="text-dark-white"><i class="far fa-star"></i></span>--}}
+{{--                    <span class="pro-review"> <span>1 Reviews</span>--}}
+{{--                    </span>--}}
+{{--                  </span>--}}
+{{--                  <div class="desc mb-20 pb-20 border-bottom">--}}
+{{--                    <span class="price">$390 <span>$480</span></span>--}}
+{{--                  </div>--}}
+{{--                  <div class="mt-20 mb-20">--}}
+{{--                    <div class="d-inline-block other-info">--}}
+{{--                      <h6>Availability:--}}
+{{--                        <span class="text-success ml-2">In Stock</span>--}}
+{{--                      </h6>--}}
+{{--                    </div>--}}
+{{--                    <div class="ml-2 d-inline-block other-info">--}}
+{{--                      <h6>SKU:--}}
+{{--                        <span class="grey ml-2">006-bhg</span>--}}
+{{--                      </h6>--}}
+{{--                    </div>--}}
+{{--                  </div>--}}
+{{--                  <div class="short-descr mb-20">--}}
+{{--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut--}}
+{{--                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris--}}
+{{--                      nisi ut aliquip</p>--}}
+{{--                  </div>--}}
+{{--                  <div class="color-sec mb-20">--}}
+{{--                    <label>Color</label>--}}
+{{--                    <div class="color-box">--}}
+{{--                      <label class="m-0">--}}
+{{--                        <input type="radio" name="color">--}}
+{{--                        <span class="choose-color red"></span>--}}
+{{--                      </label>--}}
+{{--                      <label class="m-0">--}}
+{{--                        <input type="radio" name="color">--}}
+{{--                        <span class="choose-color yellow"></span>--}}
+{{--                      </label>--}}
+{{--                      <label class="m-0">--}}
+{{--                        <input type="radio" name="color">--}}
+{{--                        <span class="choose-color blue"></span>--}}
+{{--                      </label>--}}
+{{--                      <label class="m-0">--}}
+{{--                        <input type="radio" name="color">--}}
+{{--                        <span class="choose-color green"></span>--}}
+{{--                      </label>--}}
+{{--                    </div>--}}
+{{--                  </div>--}}
+{{--                  <div class="color-sec mb-20">--}}
+{{--                    <label>Material</label>--}}
+{{--                    <div class="color-box">--}}
+{{--                      <label class="m-0">--}}
+{{--                        <input type="radio" name="material">--}}
+{{--                        <span class="choose-material">Дъб</span>--}}
+{{--                      </label>--}}
+{{--                      <label class="m-0">--}}
+{{--                        <input type="radio" name="material">--}}
+{{--                        <span class="choose-material">Орех</span>--}}
+{{--                      </label>--}}
+{{--                      <label class="m-0">--}}
+{{--                        <input type="radio" name="material">--}}
+{{--                        <span class="choose-material">Ясен</span>--}}
+{{--                      </label>--}}
+{{--                      <label class="m-0">--}}
+{{--                        <input type="radio" name="material">--}}
+{{--                        <span class="choose-material">Stone</span>--}}
+{{--                      </label>--}}
+{{--                    </div>--}}
+{{--                  </div>--}}
+{{--                  <div class="quantity-cart d-block d-sm-flex">--}}
+{{--                    <div class="quantity-box">--}}
+{{--                      <button type="button" class="minus-btn">--}}
+{{--                        <i class="fal fa-minus"></i>--}}
+{{--                      </button>--}}
+{{--                      <input type="text" class="input-qty" name="name" value="1">--}}
+{{--                      <button type="button" class="plus-btn">--}}
+{{--                        <i class="fal fa-plus"></i>--}}
+{{--                      </button>--}}
+{{--                    </div>--}}
+{{--                    <div class="cart-btn pl-40">--}}
+{{--                      <a href="#" class="main-btn btn-border">Add to Cart</a>--}}
+{{--                    </div>--}}
+{{--                  </div>--}}
+{{--                  <div class="other-info flex mt-20">--}}
+{{--                    <h6>Category:</h6>--}}
+{{--                    <ul>--}}
+{{--                      <li class="list-inline-item mr-2">--}}
+{{--                        <a href="#" class="grey">Bracelets</a>--}}
+{{--                      </li>--}}
+{{--                      <li class="list-inline-item mr-2">--}}
+{{--                        <a href="#" class="grey">Маси</a>--}}
+{{--                      </li>--}}
+{{--                      <li class="list-inline-item">--}}
+{{--                        <a href="#" class="grey">Ясен Декор</a>--}}
+{{--                      </li>--}}
+{{--                    </ul>--}}
+{{--                  </div>--}}
+{{--                  <div class="other-info flex mt-20">--}}
+{{--                    <h6>Tags:</h6>--}}
+{{--                    <ul>--}}
+{{--                      <li class="list-inline-item mr-2">--}}
+{{--                        <a href="#" class="grey">Маси</a>--}}
+{{--                      </li>--}}
+{{--                      <li class="list-inline-item mr-2">--}}
+{{--                        <a href="#" class="grey">necklaces</a>--}}
+{{--                      </li>--}}
+{{--                      <li class="list-inline-item">--}}
+{{--                        <a href="#" class="grey">Декор</a>--}}
+{{--                      </li>--}}
+{{--                    </ul>--}}
+{{--                  </div>--}}
+{{--                </div>--}}
+{{--              </div>--}}
+{{--            </div>--}}
+{{--          </div>--}}
+{{--        </div>--}}
+{{--      </div>--}}
+{{--    </div>--}}
+{{--  </div>--}}
   <!-- Quick View Modal End -->
 @include('layouts.footer')

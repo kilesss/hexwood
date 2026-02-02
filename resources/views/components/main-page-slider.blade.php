@@ -15,7 +15,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-11">
             <div class="banner-content text-center">
-              <span class="promo-tag" data-animation="fadeInDown" data-delay=".6s">Ръчна изработка • Масивно дърво •
+              <span class="promo-tag no-mobile" data-animation="fadeInDown" data-delay=".6s">Ръчна изработка • Масивно дърво •
                 Лимитирани серии</span>
               <h1 class="title" data-animation="fadeInLeft" data-delay=".9s">Дървото има характер.<br>Ние го оформяме.
               </h1>
@@ -40,11 +40,11 @@
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="banner-content text-center">
-              <span class="promo-tag" data-animation="fadeInDown" data-delay=".6s">Създадено бавно. Изградено да остане.
+              <span class="promo-tag no-mobile" data-animation="fadeInDown" data-delay=".6s">Създадено бавно. Изградено да остане.
               </span>
               <h1 class="title" data-animation="fadeInLeft" data-delay=".9s"> Родено от дървото.<br>Оформено с идея.
               </h1>
-              <h2 class="hero-subtitle" style="    font-size: 17px; margin-bottom: 17px;">
+              <h2 class="hero-subtitle no-mobile" style="    font-size: 17px; margin-bottom: 17px;">
                     Луксозни мебели и интериорни обекти от масивно дърво,
                     създадени по поръчка и в лимитирани серии.
               </h2>

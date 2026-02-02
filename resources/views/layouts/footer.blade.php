@@ -1,6 +1,68 @@
 
-  <!--====== Modal Popup Start ======-->
-  <!-- The Modal -->
+<footer class="footer-two">
+    <div class="footer-widget-area pt-100 pb-50">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-lg-12 col-sm-12 order-2 order-lg-3">
+                    <!-- Contact Widget -->
+                    <div class="widget contact-widget mb-50">
+                        <h4 class="widget-title">Свържете се с нас.</h4>
+                        <div class="contact-lists" style="display: flex">
+                            <div class="contact-box col-md-4">
+                                <div class="icon">
+                                    <i class="flaticon-phone"></i>
+                                </div>
+                                <div class="desc">
+                                    <h6 class="title">Телефонен номер</h6>
+                                    +359 885 110 977
+                                </div>
+                            </div>
+                            <div class="contact-box  col-md-4">
+                                <div class="icon">
+                                    <i class="flaticon-message"></i>
+                                </div>
+                                <div class="desc">
+                                    <h6 class="title">Email</h6>
+                                    <a href="#">lpenchev1990@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-box  col-md-4">
+                                <div class="icon">
+                                    <i class="flaticon-location-pin"></i>
+                                </div>
+                                <div class="desc">
+                                    <h6 class="title">Адрес</h6>
+                                    Обл. Перник общ. Земен гр. Земен <br> ул. Хан Аспарух 23
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area pt-30 pb-30">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-5 order-2 order-md-1">
+                    <p class="copyright-text copyright-two">Всички права запазени @ <a href="#">HexWood Studio</a> - 2026</p>
+                </div>
+                <div class="col-lg-6 col-md-7 order-1 order-md-2">
+                    <div class="footer-menu text-center text-md-right">
+                        <ul>
+                            <li><a href="#">Terms of use</a></li>
+                            <li><a href="#">Privacy Environmental Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- The Modal -->
   <div class="modal fade on-load-modal" id="myModal">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content" style="background-image: url(assets/img/popup.jpg)">

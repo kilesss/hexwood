@@ -70,10 +70,11 @@
           <div class="navbar-close">
             <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
           </div>
-          <!-- Off canvas Menu  -->
-          <div class="toggle">
-            <a href="#" id="offCanvasBtn"><i class="fal fa-bars"></i></a>
-          </div>
+{{--          <!-- Off canvas Menu  -->--}}
+{{--          <div class="toggle">--}}
+{{--            <a href="#" id="offCanvasBtn"><i class="fal fa-bars"></i></a>--}}
+{{--          </div>--}}
+{{--            бутон меню--}}
           <!-- Mneu Items -->
           <div class="sigma-header-nav">
             <div class="sigma-header-nav-inner">
@@ -636,11 +637,6 @@
                 </g>
               </g>
             </svg>
-
-            <div class="site-logo-text">
-              <h3>Laramiss</h3>
-              <h6>Luxury Pieces</h6>
-            </div>
           </a>
         </div>
         <!-- Navbar Toggler -->
@@ -660,123 +656,69 @@
         <!-- Mobile Menu Start -->
         <aside class="sigma-mobile-menu">
           <ul class="sigma-main-menu">
-            <li class="menu-item menu-item-has-children">
-              <a href="#">
-                Home
-              </a>
-              <ul class="sub-menu">
-                <li class="menu-item">
-                  <a href="index.html">Home 1</a>
-                </li>
-                <li class="menu-item">
-                  <a href="index-2.html">Home 2</a>
-                </li>
-                <li class="menu-item">
-                  <a href="index-3.html">Home 3</a>
-                </li>
-                <li class="menu-item">
-                  <a href="index-4.html">Home 4</a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item menu-item-has-children">
-              <a href="#">Shop</a>
-              <ul class="sub-menu">
-                <li class="menu-item">
-                  <a href="shop-left.html">Shop Left Sidebar</a>
-                </li>
-                <li class="menu-item">
-                  <a href="shop-left-style-2.html">Shop Left Sidebar v2</a>
-                </li>
-                <li class="menu-item">
-                  <a href="shop-right.html">Shop Right Sidebar</a>
-                </li>
-                <li class="menu-item">
-                  <a href="shop-right-style-2.html">Shop Right Sidebar v2</a>
-                </li>
-                <li class="menu-item">
-                  <a href="shop-detail.html">Product Details</a>
-                </li>
-                <li class="menu-item">
-                  <a href="my-account.html">My Account</a>
-                </li>
-                <li class="menu-item">
-                  <a href="checkout.html">Checkout</a>
-                </li>
-                <li class="menu-item">
-                  <a href="wishlist.html">Wishlist</a>
-                </li>
-                <li class="menu-item">
-                  <a href="cart.html">Cart</a>
-                </li>
-                <li class="menu-item">
-                  <a href="login.html">Login</a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item menu-item-has-children">
-              <a href="#">
-                Blog
-              </a>
-              <ul class="sub-menu">
-                <li class="menu-item"> <a href="blog-grid-sidebar.html">Blog Grid Sidebar</a>
-                </li>
-                <li class="menu-item"> <a href="blog-details.html">Blog Details</a>
-                </li>
-                <li class="menu-item"> <a href="blog-grid.html">Blog Grid</a>
-                </li>
-                <li class="menu-item"> <a href="blog-list.html">Blog List</a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item menu-item-has-children">
-              <a href="#">
-                Pages
-              </a>
-              <ul class="sub-menu">
-                <li class="menu-item">
-                  <a href="classification.html">Classification</a>
-                </li>
-                <li class="menu-item">
-                  <a href="my-account.html">Account</a>
-                </li>
-                <li class="menu-item">
-                  <a href="gallery.html">Gallery</a>
-                </li>
-                <li class="menu-item">
-                  <a href="team.html">Team</a>
-                </li>
-                <li class="menu-item">
-                  <a href="404.html">Error 404</a>
-                </li>
-                <li class="menu-item">
-                  <a href="coming-soon.html">Coming Soon</a>
-                </li>
-                <li class="menu-item">
-                  <a href="typography.html">Typography</a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item">
-              <a href="about.html">
-                About
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="contact.html">
-                Contact
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="shop-left.html">
-                Орех
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="shop-left.html">
-                Accessories
-              </a>
-            </li>
+              <li class="menu-item ">
+                            <a href="{{route('home')}}">Начало</a>
+                          </li>
+
+              @foreach($categories as $key => $cat)
+                  <li class="menu-item ">
+                      <a href="{{ route('category.detail', ['slug' => $key]) }}">{{$cat['name']}}</a>
+                  </li>
+              @endforeach
+{{--            <li class="menu-item ">--}}
+{{--                menu-item-has-children--}}
+{{--              <a href="#">--}}
+{{--                Начало--}}
+{{--              </a>--}}
+{{--              <ul class="sub-menu">--}}
+{{--                <li class="menu-item">--}}
+{{--                  <a href="index.html">Home 1</a>--}}
+{{--                </li>--}}
+{{--                <li class="menu-item">--}}
+{{--                  <a href="index-2.html">Home 2</a>--}}
+{{--                </li>--}}
+{{--                <li class="menu-item">--}}
+{{--                  <a href="index-3.html">Home 3</a>--}}
+{{--                </li>--}}
+{{--                <li class="menu-item">--}}
+{{--                  <a href="index-4.html">Home 4</a>--}}
+{{--                </li>--}}
+{{--              </ul>--}}
+{{--            </li>--}}
+{{--            <li class="menu-item ">--}}
+{{--              <a href="#">Лампи</a>--}}
+{{--            </li>--}}
+{{--            <li class="menu-item ">--}}
+{{--              <a href="#">--}}
+{{--                Етаьерки--}}
+{{--              </a>--}}
+
+{{--            </li>--}}
+{{--            <li class="menu-item ">--}}
+{{--              <a href="#">--}}
+{{--                  Малки мебели--}}
+{{--              </a>--}}
+{{--            </li>--}}
+{{--            <li class="menu-item">--}}
+{{--              <a href="about.html">--}}
+{{--                Домашни любимци--}}
+{{--              </a>--}}
+{{--            </li>--}}
+{{--            <li class="menu-item">--}}
+{{--              <a href="contact.html">--}}
+{{--                Холни маси--}}
+{{--              </a>--}}
+{{--            </li>--}}
+{{--            <li class="menu-item">--}}
+{{--              <a href="shop-left.html">--}}
+{{--                Трапезни маси--}}
+{{--              </a>--}}
+{{--            </li>--}}
+{{--            <li class="menu-item">--}}
+{{--              <a href="shop-left.html">--}}
+{{--                Други--}}
+{{--              </a>--}}
+{{--            </li>--}}
           </ul>
         </aside>
         <!-- Mobile Menu End -->
