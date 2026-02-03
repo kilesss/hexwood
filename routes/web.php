@@ -40,7 +40,11 @@ require __DIR__ . '/auth.php';
 Route::get('/', [PageController::class, 'home'])->name('home');
 use Illuminate\Support\Facades\Storage;
 use ZipArchive;
-
+Route::get('/__debug-storage', function () {
+    return response()->json(
+        scandir(storage_path('app/public'))
+    );
+});
 Route::get('/__download-storage', function () {
     $zip = new ZipArchive;
     $path = storage_path('app/storage.zip');
