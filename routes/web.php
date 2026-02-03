@@ -49,7 +49,7 @@ Route::get('/__download-storage', function () {
         $files = new RecursiveIteratorIterator(
             new RecursiveDirectoryIterator(storage_path('app/public'))
         );
-
+var_dump($files);
         foreach ($files as $file) {
             if (!$file->isDir()) {
                 $zip->addFile($file, str_replace(storage_path('app/'), '', $file));
