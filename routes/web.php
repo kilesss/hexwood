@@ -44,7 +44,7 @@ use ZipArchive;
 Route::get('/__download-storage', function () {
     $zip = new ZipArchive;
     $path = storage_path('app/storage.zip');
-
+    var_dump($path, ZipArchive::CREATE, ZipArchive::OVERWRITE);die;
     if ($zip->open($path, ZipArchive::CREATE | ZipArchive::OVERWRITE)) {
         $files = new RecursiveIteratorIterator(
             new RecursiveDirectoryIterator(storage_path('app/public'))
