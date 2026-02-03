@@ -44,12 +44,7 @@ use ZipArchive;
 Route::get('/__download-storage', function () {
     $zip = new ZipArchive;
     $path = storage_path('app/storage.zip');
-    dd([
-        'zip_class' => class_exists('ZipArchive'),
-        'zip_ext' => extension_loaded('zip'),
-        'storage_writable' => is_writable(storage_path('app')),
-        'path' => $path,
-    ]);    if ($zip->open($path, ZipArchive::CREATE | ZipArchive::OVERWRITE)) {
+    if ($zip->open($path, ZipArchive::CREATE | ZipArchive::OVERWRITE)) {
         $files = new RecursiveIteratorIterator(
             new RecursiveDirectoryIterator(storage_path('app/public'))
         );
@@ -60,6 +55,22 @@ var_dump($files);
             }
         }
         $zip->close();
+    }else {
+        dd([
+            'result' => $res,
+            'error' => match ($res) {
+                ZipArchive::ER_EXISTS => 'File exists',
+                ZipArchive::ER_INCONS => 'Zip inconsistent',
+                ZipArchive::ER_INVAL => 'Invalid argument',
+                ZipArchive::ER_MEMORY => 'Malloc failure',
+                ZipArchive::ER_NOENT => 'No such file',
+                ZipArchive::ER_NOZIP => 'Not a zip',
+                ZipArchive::ER_OPEN => 'Can’t open file',
+                ZipArchive::ER_READ => 'Read error',
+                ZipArchive::ER_SEEK => 'Seek error',
+                default => 'Unknown error',
+            }
+        ]);
     }
 
     return response()->download($path)->deleteFileAfterSend(true);
