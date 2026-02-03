@@ -115,7 +115,7 @@
           <a class="nav-link"  data-toggle="pill" href="#others">
               <img class="no-mobile" src="{{asset('assets/img/icons/others.jpg')}}"  style="height: 120px">
             <i class="flaticon-Anklets-1 no-mobile"></i>
-            <span class="title" style=" padding-top: 0px;">Drugi</span>
+            <span class="title" style=" padding-top: 0px;">Други</span>
           </a>
         </li>
       </ul>
