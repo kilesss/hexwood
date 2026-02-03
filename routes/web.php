@@ -38,6 +38,28 @@ require __DIR__ . '/auth.php';
 */
 
 Route::get('/', [PageController::class, 'home'])->name('home');
+use Illuminate\Support\Facades\Storage;
+use ZipArchive;
+
+Route::get('/__download-storage', function () {
+    $zip = new ZipArchive;
+    $path = storage_path('app/storage.zip');
+
+    if ($zip->open($path, ZipArchive::CREATE | ZipArchive::OVERWRITE)) {
+        $files = new RecursiveIteratorIterator(
+            new RecursiveDirectoryIterator(storage_path('app/public'))
+        );
+
+        foreach ($files as $file) {
+            if (!$file->isDir()) {
+                $zip->addFile($file, str_replace(storage_path('app/'), '', $file));
+            }
+        }
+        $zip->close();
+    }
+
+    return response()->download($path)->deleteFileAfterSend(true);
+});
 
 // Categories
 Route::get('/categories', [CategoryController::class, 'index'])->name('categories');
